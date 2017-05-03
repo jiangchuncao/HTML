@@ -1,0 +1,386 @@
+@charset "utf-8";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color:blue;}
+img{border:none;}
+table{border-collapse: collapse;}
+textarea{resize: none;overflow: hidden;}
+
+.clear{
+	clear: both;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.w_1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*header*/
+.header{
+	height: 62px;
+	background: #232323;
+
+}
+.header .lefta img{
+	 float: left;
+}
+.header .righta ul{
+	 float: right;
+	 margin-left:100px; 
+}
+.header .righta li{
+	 float: left;
+	 line-height: 60px;
+	
+}
+.header .righta a{
+	 color: #fff;
+	 font-weight: bold;
+	 
+}
+.header .righta span
+{
+	color:#454545;
+	margin: 0px 10px;
+}
+/*<!-- 图片区域 -->*/
+
+.logo{
+	 position: relative;
+	}
+.logo .tupi .la{
+	width: 100%;
+	height: 421px;
+
+	
+
+
+}
+.logo .lb{
+	 position: absolute;
+     left: 90px;
+     top: -10px;
+}
+.logo .lc{
+	 position: absolute;
+     left: 500px;
+     top: 55px;
+}
+.logo .ld{
+	  position: absolute;
+      left: 600px;
+      top: 195px;
+}
+.logo .le{
+	   position: absolute;
+      left: 556px;
+       top: 276px;
+}
+
+.logo .tupib{
+	 
+	  background: #000;
+	  opacity: 0.6;
+	  position: absolute;
+	  top: 351px;
+	  width: 100%
+
+
+}
+.tupib img{
+	height: 53px;
+	width: 123px;
+	border: 2px solid #fee437;
+	margin: 5px 0px;
+	  opacity: 0.5;
+
+
+	  behavior="down"
+	  direction="scroll"
+	   scrollamount="10"
+	   "height"100"
+      float: left;
+
+}
+ .tupib .first{
+	 margin-left: 275px;
+}
+.tupib img:hover{
+	   opacity: 1;	   
+}
+  /*内容*/
+ .main{
+  	 height: 350px;
+  	  background: #f5f5f5;
+  	   
+  }
+  .he1{
+  	  margin-top:30px;
+  	  width: 298px;
+  	  border-left: 1px solid #e0e5e9;
+  	  float: left;
+  }
+  .dahe .he1:first-child{
+	 border-left: none;
+}
+ .main .he1 .tu{
+  	 background: url(images/qf_list_bg.png);
+  	 width: 55px;
+  	 height: 94px;
+  	 margin: 20px 80px 0px 108px;
+  }
+  .main .he1 h2{
+  	  
+  	  margin: 15px 83px;
+
+  }
+  .main .he1 h3{
+        font-size: 14px;
+         color: #536a7c;
+         text-align: center;
+  }
+  .main .he1 p{
+  	      color:#afc2d1;
+  	      text-align: center;
+  	      line-height: 23px;
+  	      margin-top: 17px;
+  }
+.main .he1 .tu1{
+  	 background: url(images/qf_list_bg.png) -95px 0px;
+  	 
+
+  	 width: 92px;
+  	 height: 103px;
+  	 margin: 20px 0px 0px 115px ;
+  }
+  .main .he1 .tu2{
+  	 background: url(images/qf_list_bg.png) -272px 0px;
+  	 width: 136px;
+  	 height: 94px;
+  	 margin: 20px 0px 0px 73px;
+  }
+  .main .he1 .tu3{
+  	 background: url(images/qf_list_bg.png) -402px 0px;
+  	 width: 107px;
+  	 height: 90px;
+  	 margin: 20px 0px 0px 72px;
+  }
+  /*第二块内容*/
+  .new .zuo{
+  	 float: left;
+  	 margin: 40px 0px 35px 0px;
+  	 border-right: 1px solid #dedede;
+  	 width: 700px;
+  }
+  
+  .new .zuo h2{
+  	  background: url(images/news_pic.jpg);
+  	  width: 300px;
+  	  height: 228px;
+  	  float: left;
+  	  margin-right:15px 
+
+  }
+
+ .new .zuo h3{
+ 	 font-size: 19px;
+ 	margin-top: 5px;
+
+ }
+ .new .zuo h4{
+ 	 margin: 13px 0px;
+ }
+ .new .zuo i{
+       font-size: 13px;
+       color: #9b9597;
+       font-weight: normal;
+     
+ }
+ .new .zuo .shang{
+ 	 border-bottom: 1px  dashed #9b9597;
+ 	  width: 324px;
+ 	  height: 113px;
+ 	  float: left;
+ }
+  .new .zuo ul{
+  	 float: left;
+  	 margin-top: 10px;
+  }
+   .new .zuo li{
+   	line-height: 26px;
+   	color: #9b9597;
+   }
+ .new .you{
+  	 float: left;
+  	 border-right: 1px solid #dedede;
+  	 margin-left:56px;
+  	 margin-top:40px;
+  	 width: 365px; 
+  }
+.new .you h2{
+	  font-size: 19px;
+}
+.new .you span{
+	 background: url(images/qf_qq.jpg);
+	 width: 140px;
+	 height: 25px;
+	float: left;
+	 margin-top:16px; 
+	 margin-right:10px 
+}
+.new .you h3{
+	  color: #85654c;
+	 margin-top:20px; 
+}
+.new .you p{
+	 color: #6a76a6;
+	 margin-top:18px;
+	 line-height:26px;
+
+}
+ /*尾部*/
+.weibu{
+	background: #222;
+    height: 214px;
+}
+.weibu .zoujin{
+	width: 473px;
+    float: left;
+    background: url(images/qf_bot_line.png) no-repeat right center;
+    padding-top: 45px;
+    height: 169px;
+}
+.weibu .zoujin ul{
+	float: left;
+	margin-right: 30px;
+}
+.weibu .zoujin p{
+	color: #fff;
+    padding-bottom: 12px;
+}
+.weibu .zoujin li{
+	height: 24px;
+	line-height: 24px;
+}
+.weibu .zoujin li a{
+	color: #999;
+    font-size: 12px;
+}
+
+.ditu{
+    float: left;
+    width: 216px;
+    height: 171px;
+    background: url(images/qf_map.png) no-repeat;
+    margin: 30px 80px 0 80px;
+    position: relative;
+}
+ 
+.ditu span,.ditu a{
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+}
+.ditu a:hover {
+    font-size: 14px;
+    color: #F60;
+}
+.ditu a:hover em {
+    background: url(images/disc_white_03.png) no-repeat;
+}
+.ditu em {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: url(images/disc_white_07.png) no-repeat;
+    margin-left: 5px;
+}
+.dalian em, .shanghai em, .shenzhen em {
+    margin: 0 5px 0 0;
+}
+.tips{
+    left: 10px;
+    top: 43px;
+}
+.beijing {
+    left: 126px;
+    top: 53px;
+}
+.dalian {
+    left: 174px;
+    top: 44px;
+}
+.zhengzhou {
+    left: 116px;
+    top: 78px;
+}
+.xian {
+    left: 72px;
+    top: 87px;
+}
+.wuhan {
+    left: 109px;
+    top: 101px;
+}
+.chengdu {
+    left: 68px;
+    top: 112px;
+}
+.shanghai {
+    left: 178px;
+    top: 103px;
+}
+.guangzhou {
+    left: 106px;
+    top: 130px;
+}
+.shenzhen {
+    left: 148px;
+    top: 128px;
+}
+
+.woqu{
+    float: left;
+    background: url(images/qf_bot_line.png) no-repeat left center;
+    padding-left: 120px;
+}
+.woqu .img{
+    padding-top: 20px;
+}
+.woqu span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #464646;
+    line-height: 18px;
+    width: 146px;
+}
+
+ .jiesu{
+ 	  height: 40px;
+ 	   background:#101010;
+ }
+ 
+.jiesu p{
+	 text-align: center;
+	 line-height: 40px;
+	 color:#fff;
+	 behavior="down"
+	  direction="scroll"
+	   scrollamount="100"
+	   "height"50"
+}
+ .tupi{
+ 	behavior="down"
+	  direction="scroll"
+	   scrollamount="100"
+	   "height"100"
+      float: left;
+      
+ }
+     

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			border: 20px solid #000;
+			/*方法2：让父级也浮动*/
+			/*float: left;*/
+		}
+		.box .box1{
+			width: 200px;
+			height: 200px;
+			background: red;
+			float: left;
+		}
+		.clear{
+			/*方法一：*/
+			/*清除浮动 clear:left|right|both*/
+			/*clear: right;
+			clear: left;*/
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

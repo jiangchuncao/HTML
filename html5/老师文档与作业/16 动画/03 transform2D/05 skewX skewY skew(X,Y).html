@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 500px;
+			height: 500px;
+			border: 1px solid #ccc;
+			margin:0 auto;
+		}	
+		.box div{
+			width: 100px;
+			height: 100px;
+			margin:100px auto;
+			background: green;
+			
+			transition: 1s;
+		}
+		.box:hover div{
+			/*skew(x-angle,y-angle)*/
+			transform: skew(45deg,45deg);
+			transform: skewX(45deg);
+			transform: skewY(45deg);
+		} 
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>
+			文字
+		</div>
+	</div>
+</body>
+</html>

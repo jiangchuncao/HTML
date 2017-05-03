@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background: red;
+			/*举个栗子*/
+			/*1\属性被提出，但未列入标准，浏览器厂商通过私有前缀来支持该属性*/
+			/*-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-o-border-radius: 50%;*/
+
+			/*2\属性被列入标准，可以使用前缀或不使用前缀来实现属性特性；*/
+			/*-webkit-border-radius: 50%;*/
+			/*-moz-border-radius: 50%;*/
+			/*border-radius: 50%;*/
+
+			/*3\属性不需要再使用前缀，所有浏览器都稳定支持*/
+			/*border-radius: 50%;*/
+
+			/*注意：*/
+			/*列入标准之后，某些浏览器的私有属性会被删除掉，例如火狐的border-radius*/
+			/*-moz-border-radius: 50%;*/
+
+			/*解决办法，兼容未来列入标准时删除私有属性*/
+			/*-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;*/
+			
+			/*前缀 部分浏览器可以相互兼容*/
+			-o-border-radius: 50%;		
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

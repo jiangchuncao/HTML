@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/html5shiv.js"></script>
+	<style>
+		*{
+			margin: 0;
+		}
+		body{
+			background-color: #f5f5f5;
+		}
+		#header,#footer{
+			background-color: orange;
+		}
+		main{
+			background-color: #ccc;
+			overflow: hidden;
+		}
+		main >nav,main section{
+			float: left;
+			width: 400px;
+		}
+		main article{
+			background-color: #f5f5f5;
+			margin:10px;
+		}
+		main aside{
+			float: right;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>header</h1>
+	</header>
+	<!-- 只能在文档中出现一次 -->
+	<main>
+		<nav>
+			<ul>
+				<li><a href="#">link1</a></li>
+				<li><a href="#">link2</a></li>
+				<li><a href="#">link3</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<header>article header</header>
+				<p>他给我拣定了靠车门的一张椅子；我将他给我做的紫毛大衣铺好坐位。他嘱我路上小心，夜里警醒些，不要受凉。又嘱托茶房好好照应我。</p>
+				<p>
+					我看见他戴着黑布小帽，穿着黑布大马褂，深青布棉袍，蹒跚地走到铁道边，慢慢探身下去，尚不大难。可是他穿过铁道，要爬上那边月台，就不容易了。他用两手攀着上面，两脚再向上缩；他肥胖的身子向左微倾，显出努力的样子。这时我看见他的背影，我的泪很快地流下来了。
+				</p>
+				<footer>article footer</footer>
+			</article>
+			<article>
+				<header>article header</header>
+				<p>文章内容</p>
+				<footer>article footer</footer>
+			</article>
+		</section>
+		<aside>
+			<h2>aside</h2>
+			<p>《背影》是现代作家朱自清于1925年所写的一篇回忆性散文。这篇散文叙述的是作者离开南京到北京大学，父亲送他到浦口火车站，照料他上车，并替他买橘子的情形。在作者脑海里印象最深刻的，是他父亲替他买橘子时在月台爬上攀下时的背影。作者用朴素的文字，把父亲对儿女的爱，表达得深刻细腻，真挚感动，从平凡的事件中，呈现出父亲的关怀和爱护。
+			</p>
+		</aside>
+	</main>
+	<footer id="footer">
+		<h1>footer</h1>
+	</footer>
+</body>
+</html>

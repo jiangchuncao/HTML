@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background: green;
+			/*animation: aaa 5s;*/
+			/*animation-name:move;
+			animation-duration: 5s;
+			animation-timing-function: linear;*/
+			/*animation-iteration-count:5;*/
+			/*infinite 无限次数*/
+			animation: move 1s linear infinite;
+		}
+		@keyframes move{
+			/*0% 不写的从初始状态开始*/
+			/*结束之后回到初始状态*/
+			50%{
+				width: 500px;
+			}
+			100%{
+				width: 1000px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

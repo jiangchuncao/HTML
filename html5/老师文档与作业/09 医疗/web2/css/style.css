@@ -1,0 +1,234 @@
+@charset "utf-8";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color:blue;}
+img{border:none;}
+table{border-collapse: collapse;}
+textarea{resize: none;overflow: hidden;}
+
+/*public*/
+body{
+	font-family: '微软雅黑';
+	color: #3a3b39;
+	min-width: 1200px;
+}
+.wrap{
+	width: 1200px;
+	margin:0 auto;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*header*/
+.header{
+	height: 40px;
+	line-height: 40px;
+	background: #312f2f;
+}
+.header ul{
+	float: right;
+	height: 40px;
+} 
+.header li{
+	float: left;
+}
+.header span,.header a{
+	font-size: 14px;
+	color: #fcfcfc;
+}
+.header span{
+	margin:0 20px;
+}
+.header .search{
+	position: relative;
+	margin:0 18px 0 48px;
+}
+.header .search input{
+	width: 160px;
+	height: 24px;
+	border-radius: 10px;
+	border:none;
+	text-indent: 43px;
+	position: relative;
+    top: -2px;
+    font-family: "微软雅黑";
+}
+.header .search input:focus{
+	outline: none;
+}
+.header .search i{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 13px;
+	top:11px;
+	background: url(../img/search.png);
+	z-index: 99;
+	cursor: pointer;
+}
+
+/*nav*/
+.nav{
+	margin-top: 18px;
+}
+.nav h1{
+	float: left;
+}
+.menu{
+	float: right;
+}
+.menu > li{
+	float: left;
+	position: relative;
+}
+.menu a{
+	color: #272626;
+	font-size: 19px;
+	width: 113px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	display: block;
+	margin: 0 10px;
+}
+.menu .submenu{
+	display: none;
+	position: absolute;
+	top: 45px;
+    left: 0;
+    z-index: 99;	
+}
+.menu .submenu a{
+	color: #564e4e;
+	font-size: 16px;
+	background: #f0fdcd;
+	border-top: 1px solid #bede69;
+}
+.menu .submenu li:first-child a{
+	border-top: 1px solid #fff;
+}
+.menu > li:hover > a,
+.menu > li.active > a
+{
+	background: #769c11;
+	color: #fff;
+}
+.menu > li:hover .submenu,
+.menu > li.active .submenu
+{
+	display: block;
+}
+/*banner*/
+.banner{
+	height: 541px;
+	background: url(../img/banner.jpg);
+}
+/*main*/
+.main h2{
+	font-size: 30px;
+	font-weight: normal;
+	color: #8ab616;
+	text-align: center;
+}
+.main .name{
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background: url(../img/line.jpg) repeat-x center;
+}
+.main .name span{
+	font-size: 26px;
+	color: #8ab616;
+	background: #fff;
+	height: 28px;
+	width: 200px;
+	display: inline-block;
+}
+.main .more{
+	color: #8ab616;
+}
+.company,
+.news{
+	padding-top: 48px;
+}
+.product{
+	padding-top:35px;
+	background: #f7f7f7;
+}
+.product .name span{
+	background: #f7f7f7;
+}
+.main .content{
+	margin: 40px 0;
+}
+.main .content .img{
+	width: 400px;
+	height: 280px;
+	background: #f7f7f7;
+	float: left;
+	padding: 10px;
+}
+.main .content .img img{
+	width: 100%;
+	height: 100%;
+}
+.main .content .text{
+	float: right;
+	width: 730px;
+	line-height: 46px;
+	margin-top: 22px;
+	text-indent: 2em;
+}
+
+/*footer*/
+.footer{
+	background: #2e2c2c;
+	height: 240px;
+	color: #f1f1f1;
+}
+.footer .friendLink{
+	float: left;
+	width: 515px;
+}
+.footer .friendLink h3{
+	font-weight: normal;
+}
+.footer .friendLink li{
+	float: left;
+	padding: 10px 25px;
+	border: 1px solid #f1f1f1;
+	margin:10px 4px 0 0;
+}
+
+
+.footer .code{
+	float: left;
+	width: 182px;
+	text-align: center;
+	margin-left: 110px;	
+}
+.footer .contact{
+	float: right;
+	width: 250px;
+}
+.footer .contact span{
+	display: inline-block;
+	background:url(../img/img.png)  no-repeat;
+}
+.footer .address span{
+	height:18px;width:14px;background-position:0 0;
+}
+.footer .tel span{
+	height:15px;width:15px;background-position:0 -18px;
+}
+.footer .email span{
+	height:13px;width:19px;background-position:0 -33px;
+}

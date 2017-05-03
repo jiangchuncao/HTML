@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			border: 10px solid #000;
+			/*1\让父级浮动*/
+			/*float: left;*/
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background: #ccc;
+			float: left;
+			
+		}
+		/*清除浮动*/
+		.aaa{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1"></div>
+		<div class="aaa"></div>
+	</div>
+</body>
+</html>

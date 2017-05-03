@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    	body{
+    		border: 10px solid #000;
+    	}
+    	.box1{
+    		width: 500px;
+    		height: 500px;
+    		background: #ccc;
+    	}  
+    	.box2{
+    		width: 400px;
+    		height: 400px;
+    		background: pink;
+    		position: relative;
+    	}
+    	.box3{
+    		width: 300px;
+    		height: 300px;
+    		background: purple;
+    	}
+    	.box4{
+    		width: 200px;
+    		height: 200px;
+    		background: green;
+    	}
+    	.box5{
+    		width: 100px;
+    		height: 100px;
+    		background: red;
+    		/*相对于 最近的 有定位（relative|absolute）的父级，做绝对定位*/
+    		/*绝对定位 配合着偏移量来使用*/
+    		/*父级没有写定位的时候，绝对定位是相对于文档的*/
+
+			/*static默认值（没有定位）
+			relative（相对定位） 
+			absolute（绝对定位）
+			fixed(固定定位)*/
+
+    		position: absolute;
+    		bottom:0;
+    		right: 0;
+    	}
+    </style>
+</head>
+	<!-- body < html < 文档 -->
+<body>
+	  <div class="box1">
+	  		<div class="box2">
+	  			<div class="box3">
+	  				<div class="box4">
+	  					<div class="box5"></div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  </div>  
+</body>
+
+</html>

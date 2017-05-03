@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			width: 200px;
+			height: 200px;
+			padding: 50px;
+			border: 10px solid #000;
+			margin: 50px;
+
+			/*box-sizing: content-box | border-box;*/
+			/*box-sizing: content-box;*/
+			box-sizing: border-box;
+			/*标准盒模型：  width/height=contentwidth+padding+border*/
+			/*怪异盒模型： width/height=width/height;*/
+
+		}
+		.box1 .box2{
+			height: 50px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2"></div>
+	</div>
+</body>
+</html>

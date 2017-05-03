@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin:0;
+		}
+		/*当一个元素包含在另一个元素中时（假设没有内边距或边框把外边距分隔开），它们的上和/或下外边距也会发生合并。取两个外边距中较大的那一个值*/
+		.box1{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+			/*padding: 1px;*/
+			/*border: 1px solid #000;*/
+			margin-top: 40px;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background: red;
+			margin-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body .box{margin: 0;padding: 0;background: #fff;}
+.box .head .img{
+ background: url(img/banner.jpg);
+ width: 1242px;
+ height: 248px;
+}
+.box .top{
+	display: flex;
+	flex-wrap:wrap;
+   width: 1300px;
+   height: 400px;
+
+}
+	
+
+.box .top div{
+   height: 200px;
+    width: 400px;
+    margin: 5px;
+    background: #ff697a;
+
+}
+ .top div:nth-child(1){
+  /*align-items:stretch;*/
+   align-self: stretch;height: auto;
+  
+}
+ .top div:nth-child(2){
+   
+}
+.top div:nth-child(3){
+   justify-content: flex-start;
+	
+}
+.top div:nth-child(4){
+   
+}

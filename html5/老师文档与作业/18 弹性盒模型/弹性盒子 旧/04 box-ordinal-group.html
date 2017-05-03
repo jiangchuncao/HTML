@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			border: 10px solid #000;
+			height: 100px;
+			padding: 10px;
+			/*弹性盒子*/
+			display: -webkit-box;
+			
+			/*box-ordinal-group 设置元素的具体位置。 值是数值，默认1 
+			值低的元素显示在值高的元素前面 
+			值相同的元素，显示顺序取决于原来位置的顺序*/
+		}
+		.box div{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			border: 1px solid #fff;
+		}
+		.box div:nth-child(1){-webkit-box-ordinal-group:3;}
+		.box div:nth-child(2){-webkit-box-ordinal-group:2;}
+		.box div:nth-child(3){-webkit-box-ordinal-group:4;}
+		.box div:nth-child(4){-webkit-box-ordinal-group:5;}
+		.box div:nth-child(5){-webkit-box-ordinal-group:3;}
+		.box div:nth-child(6){-webkit-box-ordinal-group:2;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>  <!-- 3 -->
+		<div>2</div>  <!-- 2 -->
+		<div>3</div>  <!-- 4 -->
+		<div>4</div>  <!-- 5 -->
+		<div>5</div>  <!-- 3 -->
+		<div>6</div>  <!-- 2 -->
+	</div>
+</body>
+</html>

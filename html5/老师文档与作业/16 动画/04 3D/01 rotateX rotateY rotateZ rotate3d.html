@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 400px;
+			border: 1px solid #ccc;
+			margin:0 auto;
+			/*transform-style，建立3D空间*/
+			transform-style: preserve-3d;
+			/*perspective，元素距视图的距离*/
+			/*景深、站在多远的元素之外看待这个元素*/
+			perspective: 300px;
+		}	
+		.box div{
+			width: 100px;
+			height: 100px;
+			margin:100px auto;
+			background: green;
+			
+			transition: 1s;
+		}
+		.box:hover div{
+			/*rotateX(angle)
+			rotateY(angle)
+			rotateZ(angle)*/
+			/*transform: rotateX(-45deg);*/
+			/*transform: rotateY(45deg);*/
+			/*transform: rotateZ(-45deg);*/
+
+			/*rotate3d(x,y,z,angle)*/
+			/*x,y,z  1旋转  0不旋转*/
+			transform: rotate3d(1,0,0,180deg);
+		} 
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>
+			文字
+		</div>
+	</div>
+</body>
+</html>

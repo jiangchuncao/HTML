@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			padding: 200px;
+			border: 1px solid blue;
+			perspective: 1000px;
+			/*视角的基点*/
+			perspective-origin: left top;
+		}
+		.main{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			transform-style: preserve-3d;
+			/*整体盒子的旋转基点*/
+			-webkit-transform-origin: center center -50px;
+			transition:5s;
+		}
+		.main>div{
+			width: 100px;height: 100px;background: red;
+			font-size: 40px;color: #fff;text-align: center;line-height: 100px;
+			position: absolute;
+		}
+		.main div:nth-child(1){background: #16DFEE;top:-100px;left: 0;
+			transform-origin: bottom;
+			transform: rotateX(90deg);
+		}
+		.main div:nth-child(2){background: #DA24C6;top:0;left:-100px;
+			transform: rotateY(-90deg);
+			transform-origin: right;
+		}
+		.main div:nth-child(3){background: #930FF1;
+			top:0;
+			left: 0;
+		}
+		.main div:nth-child(4){background: #3223DF;top:0;left: 100px;
+			transform: rotateY(90deg);
+			transform-origin: left;
+		}
+		.main div:nth-child(5){background: #28CB46;top:100px;left: 0;
+			transform-origin: top;
+			transform: rotateX(-90deg);
+		}
+		.main div:nth-child(6){background: #E5F41B;
+			top:0;
+			left: 0;
+			transform: translateZ(-100px);
+		}
+		/*盒子旋转	*/
+		.box:hover .main{
+			transform: rotateX(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="main">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</div>
+</body>
+</html>

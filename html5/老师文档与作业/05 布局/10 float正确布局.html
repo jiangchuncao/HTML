@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 900px;
+			border: 1px solid #000;
+			margin: 100px auto;
+			overflow: hidden;
+		}	
+		.box > div{
+			width: 300px;
+			float: left;
+		}
+		.box1 div:nth-child(1){
+			height: 300px;
+			background: pink;
+		}
+		.box1 div:nth-child(2){
+			height: 200px;
+			background: orange;
+		}
+
+		.box2 div:nth-child(1){
+			height: 240px;
+			background: blue;
+		}
+		.box2 div:nth-child(2){
+			height: 540px;
+			background: purple;
+		}
+		.box3 div:nth-child(1){
+			height: 240px;
+			background: #ccc;
+		}
+		.box3 div:nth-child(2){
+			height: 340px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="box2">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="box3">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>

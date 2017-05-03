@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	    /*没有加任何子节点的*/
+		  ul li:empty{
+		  	 background: red;
+		  }
+		  /*只有一个并且是span*/
+		   span:only-child{
+
+		   }
+		 
+		   a:only-of-child{
+
+		   }
+	</style>
+
+</head>
+<body>
+	<ul>
+		 <li></li>
+		 <li>糖糖糖糖糖糖</li>
+		 <li>
+		 	 <span>你的糖</span>
+		 </li>
+		 <li>
+		 	  <span>你的糖</span>
+		 	  <a href="#">益达</a>
+		 </li>
+		 <li>
+		     <span>你的糖</span>
+		 	  <a href="#">益达</a>
+		 	  <a href="#">益达</a>
+		 </li>
+	</ul>
+	 
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			height: 700px;
+			border: 2px solid purple;
+			
+			/*display:box;*/
+			/*弹性盒子*/
+			display: flex;
+			/*设置子元素在侧轴方向上居中*/
+			align-items: center;
+		}
+		.box div{
+			width: 200px;
+			height: 100px;
+			background: pink;
+			border: 1px solid #fff;
+		}
+		/*覆盖父元素设置的align-items*/
+		.box div:nth-child(1){align-self: flex-start;}
+		.box div:nth-child(2){align-self: flex-end;}
+		.box div:nth-child(3){}
+		.box div:nth-child(4){align-self: stretch;height: auto;}
+		.box div:nth-child(5){align-self: center;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</div>
+</body>
+</html>

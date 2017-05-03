@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 animation动画</title>
+    <style>
+    html,body {
+        height: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .car {
+        width: 240px;
+        height: 100px;
+        position: absolute;
+        bottom: 100px;
+        left: 20px;
+        animation: run 2s ease;
+    }
+    .car img {
+        height: 100px;
+        width: 240px;
+    }
+    @keyframes run{
+        /*关键字"from"和"to",和0％到100％相同*/
+        from {
+            bottom: 100px;
+            left: 20px;
+            transform: skew(20deg, 0);
+        }
+        to {
+            bottom: 100px;
+            left: 800px;
+            transform: skew(-20deg, 0);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="car">
+        <img src="./images/car.jpg" alt="">
+    </div>
+</body>
+
+</html>

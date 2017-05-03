@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			height: 700px;
+			border: 2px solid purple;
+			
+			/*display:box;*/
+			/*弹性盒子*/
+			display: flex;
+		}
+		.box div{
+			width: 200px;
+			height: 100px;
+			background: pink;
+			border: 1px solid #fff;
+		}
+		/*控制子元素的顺序*/
+		/*数值小的排在前面，数值相同按原来的顺序，默认数值0*/
+		.box div:nth-child(1){order:2;}
+		.box div:nth-child(2){order:1;}
+		.box div:nth-child(3){order:3;}
+		.box div:nth-child(4){order:2;}
+		.box div:nth-child(5){order:0;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>  <!-- 2 -->
+		<div>2</div>  <!-- 1 -->
+		<div>3</div>  <!-- 3 -->		
+		<div>4</div>  <!-- 2 -->
+		<div>5</div>  <!-- 0 -->
+	</div>
+</body>
+</html>

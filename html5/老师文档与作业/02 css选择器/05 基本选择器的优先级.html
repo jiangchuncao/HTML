@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*权重相同时 后者覆盖前者*/
+		/*标签选择器 1*/
+		/*类选择器  10*/
+		/*id选择器  100*/
+		/*行内样式  1000*/
+		ul li{
+			background: blue;  /*1+1*/
+		}
+		li{
+			background: red;   /*1*/
+		}
+		.box{
+			background: yellow;  /*11*/
+		}
+		.box1{
+			background: green;  /*11*/
+		}
+		#box2{
+			background: pink;  /*100*/
+		}
+		li{
+			background: orange!important;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="box1 box" id="box2" style="background: black"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+		}
+		/*配合content使用*/
+		.box:before{
+			content: '11';
+			width: 20px;
+			height: 20px;
+			display: block;
+			background: yellow;
+		}
+		.box:after{
+			content: '晚上去吃什么';
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world
+	</div>
+</body>
+</html>

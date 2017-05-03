@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*标签选择器*/
+		div{
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		/*类选择器（.） 文档中可以写多个相同的类*/
+		.box2{
+			width: 50px;
+			height: 50px;
+			background: green;
+		}
+		/*id选择器（#） 在文档中id不能重复*/
+		#box{
+			width: 50px;
+			height: 50px;
+			background: green;
+		}
+		#box1{
+			width: 50px;
+			height: 50px;
+			background: green;
+		}
+		/*群组选择器(,)  给多个选择器赋予 相同的样式 */
+		#box,#box1,h2,.qxy{
+			width: 50px;
+			height: 50px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="qxy">1</div>
+	<div id="box">2</div>
+	<div>3</div>
+	<h1 id="box1">h1</h1>
+	<h2>h2</h2>
+</body>
+</html>

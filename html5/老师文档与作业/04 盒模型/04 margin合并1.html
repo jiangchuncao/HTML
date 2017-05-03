@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+		/*当一个元素出现在另一个元素上面时，第一个元素的下外边距与第二个元素的上外边距会发生合并。取两个外边距中较大的那一个值*/
+		.box1{
+			margin-bottom: 20px;
+		}
+		.box2{
+			margin-top:40px
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>

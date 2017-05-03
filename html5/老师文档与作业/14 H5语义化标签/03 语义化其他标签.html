@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		figure{
+			margin: 0;
+		}
+		p time{
+			background-color: green;
+		}
+		summary:focus{
+			outline: none;
+		}
+		mark{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<progress max="100" value="62">
+		<span>22%</span>
+	</progress>
+
+	<br><br><br><br><br><br>
+
+	<!-- background-color: yellow;
+    color: black; -->
+	<p>
+		他给我拣定了靠车门的一张椅子；我将他给我做的紫毛大衣铺好坐位。他嘱我路上小心，夜里警醒些，不要受凉。又嘱托茶房好好照应我。
+
+		我看见他<mark>戴着</mark>黑布小帽，<mark>穿着</mark>黑布大马褂，深青布棉袍，蹒跚地<mark>走</mark>到铁道边，慢慢探身下去，尚不大难。可是他穿过铁道，要爬上那边月台，就不容易了。他用两手攀着上面，两脚再向上缩；他肥胖的身子向左微倾，显出努力的样子。这时我看见他的背影，我的泪很快地流下来了。
+	</p>
+	<!-- <details>用于描述文档或文档某个部分的细节	 -->
+	<details>
+		<summary>天净沙 秋思</summary>
+		<p>枯藤老树昏鸦</p>
+		<p>小桥流水人家</p>
+		<p>古道西风瘦马</p>
+	</details>
+	<br><br><br><br><br><br>
+	<!-- <datalist> 标签规定了 <input> 元素可能的选项列表。 -->
+	<input type="text" list="datalist1">
+	<datalist id="datalist1">
+		<option value="结构">html</option>
+		<option value="样式">css</option>
+		<option value="行为">js</option>
+	</datalist>
+
+	<br><br><br><br><br><br>
+
+	<p>
+		小丽，<time datetime="2017-2-14">情人节</time>那天你有空吗？
+	</p>
+	<p>
+		明天下午<time>3:00</time>我们一起去看电影？
+	</p>
+	<p>
+		不，我觉得下午<time>6:00</time>比较合适。
+	</p>
+	<!-- <figure>用于对元素进行组合。一般用于图片，文字组合 -->
+	<!-- figure: margin:1em 40px -->
+	<figure>
+		<figcaption>这是我送给你的表情包</figcaption>
+		<img src="../img/3.jpg" />
+	</figure>
+</body>
+</html>

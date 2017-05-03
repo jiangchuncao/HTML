@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- action  提交地址 数据提交到哪里去 -->
+	<!-- 表单：提示信息和表单元素组成 -->
+	<!-- value :默认值 -->
+	<form action="index.php">
+		<label>用户名：</label>
+		<input type="text" value="请输入用户名"  maxlength="10"/> <br>
+
+		<label>密&nbsp;码：</label>
+		<input type="password"/><br>
+
+		<!-- 单选按钮 需要加相同的name-->
+		<!-- checked="checked" 勾选-->
+		<label>性&nbsp;别：</label>
+		<input type="radio" name="sex">男
+		<input type="radio" name="sex" checked="checked">女<br>
+
+		<!-- checked="checked" 勾选-->
+		<label>爱&nbsp;好：</label>
+		<input type="checkbox" >敲代码
+		<input type="checkbox" >敲很多代码
+		<input type="checkbox" checked="checked">敲很多很多代码<br>
+		
+		<!-- 隐藏域 -->
+		<input type="hidden" value="无极剑道">
+		<!-- 文件域 -->
+		<input type="file" /><br>
+		
+		<!-- value 传递给后台的值-->
+		<!-- multiple 让下拉框多选 -->
+		<!-- 默认选择某选项 给该option加 selected="selected" -->
+		<select multiple="multiple">
+			<option value="1" selected="selected">北京</option>
+			<option value="2">广州</option>
+			<option value="3">深圳</option>
+			<option value="4" selected="selected">上海</option>
+			<option value="5" selected="selected">成都</option>
+		</select><br>
+		
+		<!-- 文本域 -->
+		<textarea cols="30" rows="10"></textarea>
+		<!-- 普通按钮 -->
+		<input type="button" value="我是普通按钮"/>
+		<!-- 提交按钮 -->
+		<input type="submit" value="我是提交按钮"/>
+		<!-- 图片提交按钮 -->
+		<input type="image" src="img/button.jpg"/>
+		<!-- 重置按钮 -->
+		<input type="reset" value="我是重置，你是谁" />
+
+
+	</form>
+</body>
+</html>

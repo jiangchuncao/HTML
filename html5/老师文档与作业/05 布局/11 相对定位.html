@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1,.box2,.box3{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background: pink;
+		}
+		.box2{
+			background: #ccc;
+			/*margin-top: 200px;
+			margin-left: 200px;*/
+			/*相对定位：相对于原来的位置，配合着偏移量使用*/
+			/*top left bottom right*/
+			/*相对定位 没有脱离文档流*/
+			position: relative;
+			top:200px;
+			left: 200px;
+			/*top:-100px;*/
+			/*left: -8px;*/
+			/*bottom:-100px;
+			right: 100px;*/
+		}
+		.box3{
+			background: purple;
+			/*margin-top:-200px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">1</div>
+	<div class="box2">2</div>
+	<div class="box3">3</div>
+</body>
+</html>

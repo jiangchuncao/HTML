@@ -1,0 +1,129 @@
+/*navigation bar*/
+
+body {
+    font-family: '微软雅黑';
+    color: #666;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background: #000;
+}
+
+.wrap {
+	 width: 1263px;
+	 height: 40px;
+	 margin: 0 auto;
+	 background: #312f2f;
+	 position: relative;
+	
+}
+.wrap ul {
+	float: right;	
+}
+.wrap ul li{
+	float: left;
+	font-size: 12px;
+	line-height: 40px;
+	color:#eee;
+	margin: 0px 15px;
+}
+
+.wrap input{
+	height: 24px;
+	width: 160px;
+    float: right;
+    margin: 7px 7px;
+    text-align: center;
+}
+.wrap img{
+     height: 20;
+     width: 20px;
+	position: absolute;
+	top:10px;
+	right: 141px;	
+}
+.wrap a{
+     color: #fff;
+}
+/*header*/
+
+.center{
+	width: 1263px;
+	height: 122px;
+	margin:0 auto;
+	
+}
+
+.center img{
+	float: left;
+	margin: 20px 97px 0px 0px;
+}
+.center ul li{
+       float:left;
+      
+     
+}
+.center a:hover{
+	background: #8ab616;
+
+
+}
+.center li a{
+	
+	color: #000;
+	display: block;
+	 line-height: 100px;
+	  margin: 0px 32px;
+}
+
+.img {
+      background: url(../医疗/img/banner.jpg);  
+      height: 536px;
+      width: 100%;
+
+}
+  /*miam*/
+/*.main h2{
+	font-size: 30px;
+	font-weight: normal;
+	color: #8ab616;
+	text-align: center;
+}
+.main .name{
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background: url(../医疗/img/line.jpg) repeat-x center;
+}
+.main .name span{
+	font-size: 26px;
+	color: #8ab616;
+	background: #fff;
+	height: 28px;
+	width: 200px;
+	display: inline-block;
+}*/
+.main h2{
+	 font-size: 30px;
+	 color: #8ab616;
+	 text-align: center;
+	 font-weight: normal;
+}
+.main .name{
+background: url(img/line.jpg) repeat-x center;
+height: 28px;
+text-align: center;
+line-height: 28px;
+
+}
+.main .name span{
+	font-size: 26px;
+	color: #8ab616;
+	height: 28px;
+	width: 200px;
+	display: inline-block;
+	background: #fff;
+  
+}

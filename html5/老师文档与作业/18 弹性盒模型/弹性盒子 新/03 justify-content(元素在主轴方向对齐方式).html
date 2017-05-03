@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			height: 700px;
+			border: 2px solid purple;
+			
+			/*display:box;*/
+			/*弹性盒子*/
+			display: flex;
+			/*起点对齐*/
+			justify-content: flex-start;
+			/*终点对齐*/
+			justify-content: flex-end;
+			/*居中对齐*/
+			justify-content: center;
+			/*两端对齐*/
+			justify-content: space-between;
+			/*四周环绕*/
+			justify-content: space-around;
+
+		}
+		.box div{
+			width: 100px;
+			height: 100px;
+			background: pink;
+			border: 1px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>

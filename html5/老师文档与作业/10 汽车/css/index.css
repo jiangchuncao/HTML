@@ -1,0 +1,97 @@
+/**content**/
+.content {
+    margin-top: 20px;
+}
+/*.content .floor{
+    float: left;
+    width: 920px;
+    background-color: #ccc;
+}
+.content .adv{
+    float: right;
+    background-color: #eee;
+}*/
+.floor .title{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    padding: 0 10px;
+}
+.floor .title h3{
+    float: left;
+    color: #333;
+}
+.floor .title > div{
+    float: right;
+}
+.floor .title a{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.floor .title a:hover{
+    color: #3061ef;
+    text-decoration: underline;
+}
+.floor .title a:last-child{
+    padding-right: 0px;
+}
+.c_list{
+    margin-bottom: 10px;
+}
+.c_list .list_detail {
+    float: left;
+    width: 230px;
+    height: 350px;
+    border: 1px solid #eee;
+    margin-left: 10px;
+}
+.c_list .list_detail:first-child{
+    margin-left: 0;
+}
+.c_list .img{
+
+}
+.c_list .img img{
+    width: 230px;
+    height: 220px;
+    border:0;
+}
+.c_list .list_detail:hover{
+    border-color: #3061ef;
+}
+
+.c_list .list_detail .name{
+    margin: 8px 10px;
+    line-height: 1em;
+    height: 3em;
+    overflow: hidden;
+}
+.name a{
+    color: #666;
+}
+.list_detail .price{    
+    margin: 8px 10px;
+    color: red;
+    font-size: 16px;
+    position: relative;
+}    
+.list_detail .price label{
+    font-size: 18px;
+}
+.list_detail .price i{
+    cursor: pointer;
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    right: 7px;
+    top: 4px;
+    position: absolute;
+    background: url(../img/search.ele.png) 17px -416px;
+}
+.list_detail .price i:hover{
+    background-position: 17px -439px;
+}
+.list_detail .goshop{
+    margin: 8px 10px;
+}

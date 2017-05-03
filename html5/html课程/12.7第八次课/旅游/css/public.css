@@ -1,0 +1,170 @@
+@charset "utf-8";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color:blue;}
+img{border:none;}
+table{border-collapse: collapse;}
+textarea{resize: none;overflow: hidden;}
+
+/*public*/
+body{font-family: '微软雅黑';color: #666;}
+.wrap{
+	width: 1263px;
+	margin:0 auto;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*header*/
+.header{
+	background: #333333;
+	height: 70px;
+}
+.header h1{
+	float: left;
+	height: 70px;
+}
+.header ul{
+	float: right;
+}
+.header ul li{
+	line-height: 70px;
+	float: left;
+}
+.header li:hover,.header .active{
+	background: #000;
+}
+.header a{
+	color: #eeeeee;
+	display: block;
+	padding: 0 30px; 
+}
+.content img{
+         width: 1263px;
+}
+.content .search{
+	width: 446px;
+	height: 52px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -27px 0 0 -296px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 0 10px;
+	outline: none;
+}
+
+.content .button{
+	width: 120px;
+	height: 54px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -27px 0 0 175px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+
+}
+.box{
+
+	width: 1263px;
+	height: 1150px;
+	
+	margin: 30px auto;
+	text-align: center;
+
+}
+
+.box .center h2 {
+	font-size: 45px;
+	letter-spacing: 2px;
+	color: #666;
+	margin: 10px 0;
+}
+.box .center p {
+	color: #666;
+	margin: 10px 0;
+}
+.box ul{
+	 margin-left: 22px
+
+}
+.box  li{
+	 width: 383px;
+	 height: 321px;
+	 float: left;
+	 border :1px solid #ccc;
+	margin: 10px;    
+}
+.box strong {
+	    font-size: 15px;
+	    color: #333;
+	    font-weight: normal;	    
+}
+.box .box1{
+	   padding: 10px;
+}
+.box  .price{
+	color: #ff6600;
+	float:left;
+}
+.box .sat{
+	float: right;
+}
+ .box .price strong{
+ 	font-size: 18px;
+ 	color: #ff6600
+ }
+/*footer*/
+.footer{
+	background: #222222;
+}
+.footer ul{
+	float: left;
+	margin:24px 0 0 35px;
+	width: 370px;
+}
+.footer ul li{
+	color: #777;
+	line-height: 35px;
+	font-size: 20px;
+}
+
+.footer ul h1 {
+	height: 33px;
+	font-size: 25px;
+	line-height: 25px;
+	color: #ccc;
+	border-bottom: 2px dashed;
+	 
+        
+}
+.footer .b_ox1{
+    height: 79px;
+	line-height: 79px;
+	text-align: center;
+	background: #000;
+	border-top: 1px solid #444;
+	font-size: 18px;
+	color:#777;
+   
+}
+

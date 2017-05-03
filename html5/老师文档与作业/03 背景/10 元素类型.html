@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*行内元素 block：不支持宽高，由内容撑开 （占一行）*/
+		/*块元素 inline：宽度占一行（父级有多宽，它就对宽），高度由内容撑开 （不占一行）*/
+		/*行内块 inline-bloc：可以支持宽高设置，默认宽高由内容撑开 （可以一行显示）*/
+			/*换行被解析了，IE7有兼容问题*/
+		div{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+			display: inline-block;
+		}
+		span{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+	<div>div</div>
+	<span>span</span>
+</body>
+</html>

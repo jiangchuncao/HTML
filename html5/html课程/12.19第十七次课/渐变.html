@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <style>
+	  	   body{
+	  	   	 margin: 0;
+	  	   }
+	  	    .box{
+	  	    	margin: 50px auto;
+	  	    	 width: 404px;
+			height: 404px;
+	  	    	  /*border: 1px solid #000;*/
+	  	    	  transition: 1s linear;
+	  	    	   
+	  	    }
+	  	    .box div{
+	  	    width:180px;
+			 height: 180px;
+            background: -webkit-linear-gradient(left,red,orange,yellow,blue,indigo);
+			margin:10px;
+			
+			border: 1px solid #000;
+			float: left;
+	  	    	 
+	  	    }
+	  	    .box .box2{
+	  	    	border-radius:0 70%;
+	  	    }
+	  	    .box .box3{
+	  	    	border-radius:70% 0 ;
+	  	    }
+	  	    .box .box4{
+	  	    	border-radius:70% 0;
+	  	    }
+	  	    .box .box5{
+	  	    	border-radius: 0 70%  ;
+	  	    }
+	  	     .box:hover{
+	  	     	transform:rotateZ(360deg);
+	  	     }
+	  </style>
+</head>
+<body>
+	 <div class="box">
+	 	  <div class="box2"></div>
+	 	    <div class="box3"></div>
+	 	    <div class="box4"></div>
+	 	     <div class="box5"></div>
+	 </div>
+</body>
+</html>

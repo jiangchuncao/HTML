@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.main{
+			width: 400px;
+			height: 400px;
+			border: 1px solid green;
+			margin: 100px auto;
+			position: relative;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			position: absolute;
+			top:0;
+			left: 0;
+			animation: move 1s linear infinite;
+		}
+		.main:hover .box{
+			/*暂停动画 paused|running*/ 
+			animation-play-state:paused; 
+		}
+		@keyframes move{
+			0%{}
+			25%{top:0;left: 300px;}
+			50%{top: 300px;left: 300px;}
+			75%{top:300px;left: 0;}
+			100%{top: 0;left: 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="box"></div>	
+	</div>
+</body>
+</html>

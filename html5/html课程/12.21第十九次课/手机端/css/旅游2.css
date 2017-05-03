@@ -1,0 +1,146 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,input,button,figure{
+	margin: 0;
+	padding: 0;
+}
+div,figure,img,input{
+	box-sizing: border-box;
+}
+input{
+	border: 0;
+	outline: none;
+}
+body{
+	font-family: "微软雅黑";
+	color: #666;
+}
+ul{
+	list-style:none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	width: 100%;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+html{
+	font-size: 625%;
+}
+/*header*/
+#header{
+	font-size: 0.16rem; 
+	height: .45rem;
+	background-color:#333;
+	line-height: 0.45rem;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+}
+#header nav a{
+      width: 25%;
+      text-align: center;
+     float: left;
+     color:#eee;
+}
+#header nav .active,
+#header nav a:hover{
+      background: #000;
+} 
+/*banner*/
+  #banner{
+  	max-width:6.4rem;
+  	margin:.45rem auto 0 auto;
+  	position: relative;
+
+  }
+  #banner hgroup{
+  	 position: absolute;
+  	 top: 50%;
+	left: 10%;
+	color: #eee;
+	margin-top: -0.24rem;
+
+  }
+  #banner hgroup h2,
+  #banner hgroup h3{
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+  }
+#banner hgroup h2{
+	 font-size: .22rem;
+	 
+}
+#banner hgroup h3{
+	 font-size: .14rem;
+	 
+}
+/*<!-- list -->*/
+.list{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding: 0 0.1rem;
+}
+.list .title{
+	font-size: 0.2rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0.15rem 0;
+}
+.info figure{
+	margin:.15rem 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.info figure:last-child{
+	margin-bottom: .15rem;
+}
+.info figure img{
+	width: 50%;
+	float: left;
+}
+.info figure figcaption{
+	width: 48%;
+	float: right;
+}
+.info hgroup h2,
+.info hgroup h3{
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.info hgroup h2{
+	font-size: 0.2rem;
+    -webkit-line-clamp: 1;
+}
+.info hgroup h3{
+	font-size: 0.18rem;
+	font-weight: normal;
+    -webkit-line-clamp: 2;
+}
+.info .price{
+	color: #f60;
+	position: absolute;
+	bottom: 0;
+	font-size: 0.26rem;
+}
+  /*footer*/
+  #footer{
+    max-width: 6.4rem;
+	margin: 0 auto;
+	background: #222;
+	color: #777;
+	text-align: center;
+	padding: 0.1rem 0;
+	font-size: 0.16rem;
+  }

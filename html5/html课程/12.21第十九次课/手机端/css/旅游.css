@@ -1,0 +1,145 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,input,button,figure{
+	margin: 0;
+	padding: 0;
+}
+div,figure,img,input{
+	box-sizing: border-box;
+}
+input{
+	border: 0;
+	outline: none;
+}
+body{
+	font-family: "微软雅黑";
+	color: #666;
+}
+ul{
+	list-style:none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	width: 100%;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+html{
+	font-size: 625%;
+}
+/*媒体查询，参考部分Bootstrap 框架*/
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media screen and (min-width: 1200px) {
+	
+}
+/*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	
+}
+/*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	      
+}
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}   
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media screen and (max-width: 479px){
+
+}
+/*header*/
+#header{
+	font-size: 0.16rem; 
+	height: .45rem;
+	background-color:#333;
+	line-height: 0.45rem;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+
+}
+
+	#header nav a{
+	float: left;
+	width: 25%;
+	text-align: center;
+	color: #eee;
+}
+#header nav a.active,
+#header nav a:hover
+{
+	background-color: #000; 
+}
+   /*adver*/
+   #adver{
+   	max-width: 6.4rem;
+	margin:.45rem auto 0 auto;
+   	 
+ }
+ /*tour*/
+ #tour{
+	max-width: 6.4rem;
+	margin: 0 auto;
+}
+#tour hgroup{
+ text-align: center;
+}
+ #tour hgroup h2{
+        font-size: .26rem;
+ }
+ #tour hgroup h3{
+          font-size: .16rem;
+    font-weight: normal;
+    margin: 0.05rem 0 0.1rem 0; 
+ }
+#tour figure{
+	width: 50%;
+	float: left;
+	background-color: #eee;
+	font-size: .16rem;
+	padding: 0.02rem;
+}
+#tour figure img{
+	border-radius: 0.04rem; 
+}
+#tour figcaption h3,
+#tour figcaption p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+}
+#tour figcaption h3{
+	font-size: 0.16rem;
+}
+#tour .message{
+	padding: 0.1rem 0;
+}
+#tour .message .price{
+	float: left;
+	color: #f60;
+}
+#tour .message .sat{
+	float: right;
+}
+ /*footer*/
+ #footer{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	background: #222;
+	color: #777;
+	text-align: center;
+	padding: 0.1rem 0;
+	font-size: 0.16rem;
+}
+      

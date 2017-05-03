@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style>
+		/*选取有该属性的元素*/
+		li[class]{}
+		/*选取 属性值=值 的元素*/
+		li[class=blue]{}
+		/*属性中的词=值*/
+		li[class~=blue]{}
+		/*包含值*/
+		li[class*=e]{}
+		/*以这个开头*/
+		li[class^=b]{}
+		/*以什么结尾*/
+		li[class$=e]{}
+		/*属性值是zh,或者以zh-开头的*/
+		li[class|=zh]{background-color: red;}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="orange">orange</li>
+		<li class="blue">blue</li>
+		<li class="black">black</li>
+		<li class="red blue">red blue</li>
+		<li class="green">green</li>
+		<li class="gray">gray</li>
+		<li class="pink">pink</li>
+		<li class="zhaaaaa"></li>
+		<li class="zh"></li>
+		<li class="zh-zs"></li>
+		<li class="zh-aaa"></li>
+	</ul>
+</body>
+</html>

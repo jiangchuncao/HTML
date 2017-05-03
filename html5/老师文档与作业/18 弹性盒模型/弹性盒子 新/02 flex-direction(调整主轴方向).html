@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			height: 700px;
+			border: 2px solid purple;
+			
+			/*display:box;*/
+			
+			/*弹性盒子*/
+			display: flex;
+
+			/*调整主轴的方向*/
+			/*flex-direction:row（默认值）| column |; */
+
+			flex-direction: column;
+			flex-direction: row;
+			flex-direction: column-reverse; /*底部对齐且反序*/
+			flex-direction: row-reverse; /*底部对齐且反序*/
+		}
+		.box div{
+			width: 100px;
+			height: 100px;
+			background: pink;
+			border: 1px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>

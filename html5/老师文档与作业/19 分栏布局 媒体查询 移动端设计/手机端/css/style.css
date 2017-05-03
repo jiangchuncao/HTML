@@ -1,0 +1,336 @@
+html{
+	font-size: 625%;
+}
+h1,h2,h3,p,figure,ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	font-family: '微软雅黑';
+	color: #666;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+ul{
+	list-style: none;
+}
+.clear{
+	zoom:1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+div,figure{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*header*/
+#header{
+	font-size: 0.16rem; 
+	height: .45rem;
+	background-color:#333;
+	line-height: 0.45rem;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+}
+#header nav a{
+	float: left;
+	width: 25%;
+	text-align: center;
+	color: #eee;
+}
+#header nav a.active,
+#header nav a:hover
+{
+	background-color: #000; 
+}
+/*footer*/
+#footer{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	background: #222;
+	color: #777;
+	text-align: center;
+	padding: 0.1rem 0;
+	font-size: 0.16rem;
+}
+/*---------------------index--------------*/
+/*adver*/
+#adver{
+	max-width: 6.4rem;
+	margin:.45rem auto 0 auto;
+}
+/*tour*/
+#tour{
+	max-width: 6.4rem;
+	margin: 0 auto;
+} 
+#tour hgroup{
+	text-align: center;
+}
+#tour hgroup h2{
+	font-size: .26rem;
+}
+#tour hgroup h3{
+	font-size: .16rem;
+	font-weight: normal;
+	margin:0.05rem 0 0.1rem 0;
+}
+#tour figure{
+	width: 50%;
+	float: left;
+	background-color: #eee;
+	font-size: .16rem;
+	padding: 0.02rem;
+}
+#tour figure img{
+	border-radius: 0.04rem;
+}
+#tour figcaption{
+}
+#tour figcaption h3,
+#tour figcaption p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+}
+#tour figcaption h3,
+#tour figcaption p
+{
+	white-space: nowrap;
+   overflow: hidden;
+  text-overflow: ellipsis;
+}
+#tour figcaption h3{
+	font-size: 0.16rem;
+}
+#tour .message{
+	padding: 0.1rem 0;
+}
+#tour .message .price{
+	float: left;
+	color: #f60;
+}
+#tour .message .sat{
+	float: right;
+}
+/*--------------------------info-----------------------*/
+#banner{
+	max-width: 6.4rem;
+	margin:.45rem auto 0 auto;
+	position: relative;
+}	
+#banner hgroup{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	color: #eee;
+	margin-top: -0.24rem;
+}
+#banner hgroup h2{
+	font-size: 0.22rem;
+}
+#banner hgroup h3{
+	font-size: 0.14rem;
+}
+/*list info*/
+.list{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding: 0 0.1rem;
+}
+.list .title{
+	font-size: 0.2rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0.15rem 0;
+}
+.info figure{
+	margin:.15rem 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.info figure:last-child{
+	margin-bottom: .15rem;
+}
+.info figure img{
+	width: 50%;
+	float: left;
+}
+.info figure figcaption{
+	width: 48%;
+	float: right;
+}
+.info hgroup h2,
+.info hgroup h3{
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.info hgroup h2{
+	font-size: 0.2rem;
+    -webkit-line-clamp: 1;
+}
+.info hgroup h3{
+	font-size: 0.18rem;
+	font-weight: normal;
+    -webkit-line-clamp: 2;
+}
+.info .price{
+	color: #f60;
+	position: absolute;
+	bottom: 0;
+	font-size: 0.26rem;
+}
+/*----------------------ticket-----------------*/
+.ticket{
+	font-size:0.16rem 
+}
+.ticket .condition{
+	margin:0.2rem 0;
+}
+.ticket mark{
+	display: inline-block;
+	padding: 0.04rem 0.1rem;
+	color: #666;
+	background-color: transparent;
+}
+.ticket mark.active{
+	color: #fff;
+	background-color: #458B00;
+	border-radius: 0.04rem;
+}
+.ticket .inputBox{
+	margin:0.1rem 0 ;
+}
+.ticket .inputBox span{
+	display: block;
+}
+.ticket .inputBox input{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 0.04rem;
+	padding: 0.05rem;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+}
+.ticket .btn{
+	width: 30%;
+	margin: 0.2rem auto 0.1rem auto;
+	background: #f60;
+	color: #fff;
+	cursor: pointer;
+	padding: 0.1rem 0;
+	text-align: center;
+	border-radius: 0.05rem;
+}
+.ticket table{
+	width: 100%;
+	border-collapse: collapse;
+	margin:0.2rem 0 0 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	box-sizing: border-box;
+}
+.ticket table th,
+.ticket table td{
+	border-bottom: 1px solid #ddd;
+	height: 0.5rem;
+	font-weight: normal;
+}
+.ticket table .price{
+	color: #f60;
+}
+.ticket table .reserve{
+	border-radius: .04rem;
+    background-color: #f60;
+    color: #fff;
+    text-align: center;
+    padding: .05rem .08rem;
+}
+.ticket tbody tr:nth-child(even){
+	background-color: #fafafa;
+}
+.ticket table tr:hover{
+	background-color: #eee;
+}
+.ticket .more{
+	border: 1px solid #ddd;
+	border-top: none;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.ticket .more a{
+	color: #666;
+	display: block;
+}
+/*-------------------about----------------*/
+.about{
+	font-size: 0.16rem;
+}
+.about .about_us p{
+	line-height: 0.32rem;
+	margin:0.1rem 0;
+}
+.about .contact_us{
+	padding: 0.1rem 0;
+}
+.about .contact_us li{
+	line-height: 0.26rem;
+} 
+/*--------------媒体查询 小于480px--------------*/
+@media (max-width: 480px){
+	/*index*/
+	#tour hgroup h2{
+		font-size: .20rem;
+	}
+	#tour figure,#tour figcaption h3{
+		font-size: .14rem;
+	}
+	#footer{
+		font-size: .12rem;
+	}
+	
+	/*info*/
+	#banner hgroup h2{
+		font-size: 0.18rem;
+	}
+	.list .title,.info hgroup h2{
+		font-size: 0.16rem;
+	}
+	.info hgroup h3{
+		font-size: 0.14rem;
+	}
+	.info .price{
+		font-size: 0.20rem;
+	}
+
+	/*ticket*/
+	.ticket{
+		font-size:0.14rem 
+	}
+	.ticket thead th:nth-child(4),
+	.ticket thead th:nth-child(5),
+	.ticket tbody td:nth-child(4),
+	.ticket tbody td:nth-child(5)
+	{
+		display: none;
+	}
+	
+	/*--------------about---------*/
+	.about{
+		font-size: 0.14rem;
+	}
+}

@@ -1,0 +1,21 @@
+/*派生选择器*/
+/*1、后代选择器（空格 儿子，孙子....）*/
+.box strong{
+	background: yellow;
+}
+/*2、子元素选择器(> 儿子)*/
+.box strong{
+	background: yellow;
+}
+
+/*3、相邻(后面的)兄弟选择器（+）*/
+.box > strong+em{
+	background: red;
+}
+
+/*class id 命名规范*/
+/*1、由字母，数字，下划线组成
+2、由字母开头，严格区分大小写
+BOX和box是两个不同的class
+3、名字长度没有限制，但是不要太长。
+4、不要以标签名字命名*/

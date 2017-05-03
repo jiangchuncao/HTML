@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background: green;
+			/*animation: aaa 5s;*/
+			/*animation-name:move;
+			animation-duration: 5s;
+			animation-timing-function: linear;*/
+			/*animation-iteration-count:5;*/
+			/*infinite 无限次数*/
+			/*当动画完成的时候，保持最后一个关键帧*/
+			/*animation-fill-mode: none|forwards;*/
+			animation-fill-mode: forwards;
+			animation: move 1s 1s linear;
+		}
+		/*.look{
+			width: 1000px;
+		}*/
+		@keyframes move{
+			/*0% 不写的从初始状态开始*/
+			/*结束之后回到初始状态*/
+			0%{
+				width: 100px;
+			}
+			50%{
+				width: 500px;
+			}
+			100%{
+				width: 1000px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box look"></div>
+</body>
+</html>

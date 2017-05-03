@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			border: 10px solid #000;
+			height: 100px;
+			padding: 10px;
+			/*弹性盒子*/
+			display: -webkit-box;
+			
+			/*定义子元素的大小*/
+			/*子元素的尺寸=总盒子的尺寸/盒子的总分数 * 当前元素的分数*/
+			
+		}
+		.box div{
+			height: 100px;
+			background: yellow;
+			border: 1px solid #fff;
+		}
+		.box div:nth-child(1){-webkit-box-flex:1;}
+		.box div:nth-child(2){width: 1000px;}
+		.box div:nth-child(3){-webkit-box-flex:1;}
+	/*	.box div:nth-child(4){-webkit-box-flex:1;}
+		.box div:nth-child(5){-webkit-box-flex:1;}
+		.box div:nth-child(6){-webkit-box-flex:3;}*/
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>  
+		<div>2</div>  
+		<div>3</div>  
+<!-- 		<div>4</div>  
+		<div>5</div>  
+		<div>6</div>   -->
+	</div>
+</body>
+</html>

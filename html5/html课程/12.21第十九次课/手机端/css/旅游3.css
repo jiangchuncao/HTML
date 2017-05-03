@@ -1,0 +1,199 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,input,button,figure{
+	margin: 0;
+	padding: 0;
+}
+div,figure,img,input{
+	box-sizing: border-box;
+}
+input{
+	border: 0;
+	outline: none;
+}
+body{
+	font-family: "微软雅黑";
+	color: #666;
+}
+ul{
+	list-style:none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	width: 100%;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+html{
+	font-size: 625%;
+}
+/*header*/
+#header{
+	font-size: 0.16rem; 
+	height: .45rem;
+	background-color:#333;
+	line-height: 0.45rem;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+}
+#header nav a{
+      width: 25%;
+      text-align: center;
+     float: left;
+     color:#eee;
+}
+#header nav .active,
+#header nav a:hover{
+      background: #000;
+} 
+  /*<!-- banner	 -->*/
+ #banner{
+ 	max-width: 6.4rem;
+  	margin:.45rem auto 0 auto;
+
+  	position: relative;
+ }
+ #banner img{
+ 	   width: 100%;
+ }
+ #banner hgroup{
+ 	  position: absolute;
+  	 top: 50%;
+	left: 10%;
+	color: #eee;
+	margin-top: -0.24rem;
+ }
+  #banner hgroup h2,
+  #banner hgroup h3{
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+  }
+#banner hgroup h2{
+	 font-size: .22rem;
+	 
+}
+#banner hgroup h3{
+	 font-size: .14rem;
+	 
+}
+      /*list*/
+ .list {
+  	 	max-width: 6.4rem;
+  	 	margin: 0 auto;
+  }
+  .list .title{
+  	 font-size: 0.2rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0.15rem 0;
+  }
+  .list .condition{
+    font-size: .16rem;
+   margin:0.2rem 0;
+  }
+  .list .condition mark{
+  	display: inline-block;
+	padding: 0.04rem 0.1rem;
+	color: #666;
+	background-color: transparent;
+ }
+   .list .condition .active{
+  	 color: #fff;
+	background-color: #458B00;
+	border-radius: 0.04rem;
+}
+.ticket .inputBox{
+	margin:0.1rem 0 ;
+}
+.list .inputBox span{
+  font-size:0.16rem;
+  display: block;
+ 
+}
+.list .inputBox input{
+    width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 0.04rem;
+	padding: 0.05rem;
+	font-family: "微软雅黑";
+	box-sizing: border-box; 
+	display: block;
+}
+.list .btn{
+	font-size:.16rem;
+	background: #f60;
+	padding: 0.1rem 0;
+	width:30%;
+	text-align: center;
+	margin: 0.2rem auto 0.1rem auto;
+	border-radius: 0.05rem;
+	color: #fff;
+	cursor: pointer;
+}
+  /*第二部分*/
+  .hot_city table{
+  	font-size: .16rem;
+     width: 100%;
+	border-collapse: collapse;
+	margin:0.2rem 0 0 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	box-sizing: border-box;
+  }
+.ticket table tr{
+	border-bottom: 1px solid #000;
+}
+.ticket table th,
+.ticket table td{
+
+	border-bottom: 1px solid #ddd;
+	height: 0.5rem;
+	font-weight: normal;
+}
+.ticket table .price{
+	color: #f60;
+}
+.ticket table .reserve{
+	border-radius: .04rem;
+    background-color: #f60;
+    color: #fff;
+    text-align: center;
+    padding: .05rem .08rem;
+}
+.ticket table tr:hover{
+	background-color: #eee;
+}
+ .more{
+	border: 1px solid #ddd;
+	border-top: none;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+ .more a{
+ 	 font-size: .2rem;
+	color: #666;
+	display: block;
+}
+ /*footer*/
+  #footer{
+    max-width: 6.4rem;
+	margin: 0 auto;
+	background: #222;
+	color: #777;
+	text-align: center;
+	padding: 0.1rem 0;
+	font-size: 0.16rem;
+  }

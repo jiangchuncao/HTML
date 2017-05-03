@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: '微软雅黑';
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner a {
+    flex: 1;
+}
+
+main {
+    padding: 5px;
+}
+
+.item {
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.item .empty {
+    flex: 1;
+}
+
+.item .links {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links a {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    border-left: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    box-sizing: border-box;
+}
+
+.links a:nth-child(1),
+.links a:nth-child(2) {
+    border-top: 0;
+}
+
+.item:nth-child(1) {
+    background-color: #ff697a;
+}
+
+.item:nth-child(2) {
+    background-color: #3d98ff;
+}
+
+.item:nth-child(3) {
+    background-color: #44c522;
+}
+
+.item:nth-child(4) {
+    background-color: #fc9720;
+}
+
+.item .last a {
+    width: 33.333%;
+}
+
+.item .last a:nth-child(1),
+.item .last a:nth-child(2),
+.item .last a:nth-child(3) {
+    border-top: 0;
+}
+
+
+/*其它部分*/
+
+.more {
+    display: flex;
+}
+
+.more a {
+    flex: 1;
+}
+
+
+/*底部导航*/
+
+footer nav {
+    display: flex;
+}
+
+footer nav a {
+    flex: 1;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #C2C2C2;
+    font-size: 12px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+/*底部链接*/
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+footer p:nth-child(1) {
+    padding: 10px 0;
+}
+
+footer p:nth-child(1) a {
+    color: #666;
+}

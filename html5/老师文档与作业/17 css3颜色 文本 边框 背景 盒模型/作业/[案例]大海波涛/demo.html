@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		section{
+			background: #0EA9B1;
+			height: 100%;
+			position: relative;
+		}
+		section >div{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+
+			animation: move 1s linear infinite;
+		}
+		.bg1{
+			background: url(1.png);
+			height: 211px;
+			bottom: 20px;
+		}
+		.bg2{
+			height: 235px;
+			background: url(2.png);
+		}
+		.sun {
+			width: 50px;
+			height: 50px;
+			background-color: #FFF;
+			border-radius: 25px;
+			position: absolute;
+			left: 200px;
+			top: 100px;
+		}
+		.sun::before, .sun::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #FFF;
+			border-radius: 25px;
+			
+		}
+		.sun::before{
+			animation: 1s scale infinite;
+		}
+		.sun::after{
+			animation: 1s 0.5s scale infinite;
+		}
+		@keyframes scale {
+			0% {}
+			100% {transform: scale(2);opacity: 0;}
+		}
+		@keyframes move {
+			0% {}
+			50% {bottom: -20px;}
+			100% {}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="sun"></div>
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+	</section>
+</body>
+</html>

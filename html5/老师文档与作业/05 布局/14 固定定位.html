@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.content{
+			height: 1000px;
+			background: #ccc;
+		}
+		.header{
+			background: green;
+			height: 30px;
+			width: 100%;
+			/*固定定位*/
+			/*完全脱离文档流*/
+			/*行内元素，块元素 宽度有内容撑开*/
+			/*行内元素支持宽高*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		.footer{
+			background: red;
+			height: 40px;
+			width: 100%;
+			position: fixed;
+			bottom:80px;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="content"></div>
+	<div class="header">宽度由内容撑开吗？</div>
+	<div class="footer">底部</div>
+</body>
+</html>

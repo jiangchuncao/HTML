@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			border: 10px solid #000;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background: #ccc;
+			float: left;
+		}
+		.pink{
+			width: 200px;
+			height: 200px;
+			background: pink;
+		}
+		/*清除浮动方法1、在浮动元素的后面加一个块元素，清除前面的浮动*/
+		.clear{
+			clear: both;
+		}
+		/*清除浮动方法2、给父级加after,在后面虚拟一个块元素，清除前面的浮动*/
+		/*IE7不支持:after*/
+		.box{
+			zoom:1;
+		}
+		.box:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		/*清除浮动方法3、overflow:hidden*/
+		.box{
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<!-- <div class="pink"></div> -->
+		<!-- <div class="clear"></div> -->
+	</div>
+</body>
+</html>

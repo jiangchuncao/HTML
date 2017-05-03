@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background: blue;
+			margin-right: 10px;
+			/*脱离文档流,按照指定的方向移动，直到碰到父级的边界，或者前一个浮动元素 停下来*/
+			/*块元素在一行显示*/
+			/*行内元素支持宽高*/
+			/*块和内联元素 宽高由内容撑开*/
+			/*没有缝隙*/
+			/*float(浮动): left|right*/
+			/*浮动脱离文档流 半层*/
+			float: left;
+		}
+		.box1{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box1"></div>
+</body>
+</html>

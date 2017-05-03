@@ -1,0 +1,281 @@
+@charset 'utf-8';
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color:blue;}
+img{border:none;}
+table{border-collapse: collapse;}
+textarea{resize: none;overflow: hidden;}
+
+/*public*/
+body{font-family: '微软雅黑';color: #666;font-size: 14px;}
+.wrapper{
+	width: 1002px;
+	margin:0 auto;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*-------index-------*/
+/*header*/
+.header{
+	height:62px;
+	background: #232323;
+	min-width: 1002px;
+}
+.header h1{
+	float: left;
+	width: 207px;
+	height: 62px;
+}
+.header .nav{
+	float: right;
+}
+.nav li{
+	float: left;
+	line-height:62px;
+	background: url(../images/qf_nav_bg.png) no-repeat right;
+}
+.nav li.last{
+	background: none;
+}
+/*.nav li:last-child{
+	background: none;
+}*/
+.nav li:hover{
+	background: orange;
+}
+.nav li a{
+	display: block;
+	padding: 0 15px;
+	color:#fff;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 420px;
+	background: url(../images/banner_1_bg.jpg) center;
+	position: relative;
+}
+.banner .wrapper{
+	position: relative;
+}
+.banner .wrapper img{
+	position: absolute;
+}
+.banner .img1{
+	top:0;
+	left:28px;
+}
+.banner .img2{
+	top:52px;
+	left: 355px;
+}
+.banner .img3{
+	top:170px;
+	left: 464px;
+}
+.banner .img4{
+	left: 467px;
+	top:234px;
+}
+.banner_bottom{
+	height: 65px;
+	background: rgba(0,0,0,0.6);
+	/*background: #000;*/
+	/*opacity: 0.6;*/
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.banner_bottom ul{
+	width: 680px;
+	margin:0 auto;
+}
+.banner_bottom li{
+	float: left;
+	position: relative;
+	margin:0 3px;
+}
+.banner_bottom li span{
+	width: 130px;
+	height: 64px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+}
+.banner_bottom li img{
+	width: 126px;
+	height: 60px;
+	border: 2px solid #ff0;
+}
+.banner_bottom li:hover span{
+	display: none;
+}
+/*content*/
+.content{
+	background:#f5f5f5; 
+	width:100%;
+	height: 316px;
+}
+.content ul{
+	padding: 34px 0 0 0;
+}
+.content li{
+	float: left;
+	border-left: #fbffff 1px solid;
+	border-right:#e0e5e9 1px solid;
+	width: 249px;
+    text-align: center;
+}
+.content li:first-child{
+	border-left: none;
+}
+.content li:last-child{
+	border-right: none;
+}
+.content li h2{
+	font-size: 22px;
+	font-weight: normal;
+}
+.content li h3{
+	font-size: 12px;
+	margin:20px 0 10px 0;
+}
+.content li i{
+	width: 52px;
+	height: 90px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background: url(../images/qf_list_bg.png);
+}
+.content li.list2 i{
+	width: 64px;
+	background-position: -98px 0;
+}
+.content li.list3 i{
+	width: 125px;
+	background-position: -278px 0;
+}
+.content li.list4 i{
+	width: 88px;
+	background-position: -415px 0;
+}
+.content li p{
+	line-height: 24px;
+	font-size: 12px;
+}
+.footer{
+	width:100%;
+	background: #222;
+	height: 195px;
+}
+.footer .wrapper{
+	padding-top: 20px;
+}
+.f_left{
+	float: left;
+	width: 490px;
+	padding-top:30px;
+	padding-bottom: 25px;
+	background: url(../images/qf_bot_line.png) no-repeat right;
+}
+.footer .f_left ul{
+	float: left;
+}
+.f_center{
+	float: left;
+	width: 316px;
+	background: url(../images/qf_bot_line.png) no-repeat right;
+}
+.f_center .map{
+	width: 216px;
+	height: 171px;
+	margin: 0 auto;
+	background: url(../images/qf_map.png);
+	position: relative;
+}
+.f_center .map span,.f_center .map a{
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.f_center .map em{
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	margin-left: 5px;
+	background: url(../images/disc_white_07.png);
+}
+.f_center .map .dalian em,
+.f_center .map .shanghai em,
+.f_center .map .shenzhen em{
+	margin:0 5px 0 0;
+}
+
+.f_center .map a:hover{
+	color: orange;
+	font-size: 14px;
+}
+.f_center .map a:hover em{
+	background: url(../images/disc_white_03.png);
+}
+
+.f_center .map .tips{
+    left: 10px;
+    top: 43px;
+}
+.f_center .map .beijing {
+    left: 126px;
+    top: 53px;
+}
+.f_center .map .dalian {
+    left: 174px;
+    top: 44px;
+}
+.f_center .map .zhengzhou {
+    left: 116px;
+    top: 78px;
+}
+.f_center .map .xian {
+    left: 72px;
+    top: 87px;
+}
+.f_center .map .wuhan {
+    left: 109px;
+    top: 101px;
+}
+.f_center .map .chengdu {
+    left: 68px;
+    top: 112px;
+}
+.f_center .map .shanghai {
+    left: 178px;
+    top: 103px;
+}
+.f_center .map .guangzhou {
+    left: 106px;
+    top: 130px;
+}
+.f_center .map .shenzhen {
+    left: 148px;
+    top: 128px;
+}
+
+.f_right{
+	float: left;
+	margin-left: 18px;
+}
+/*-------product-------*/
+
+
+
+/*-------help-------*/
+
+
+
+/*-------home-------*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		  body{
+		  	 margin: 0;
+		  }
+		  .box{ position: absolute;
+		   	  bottom:50px;
+		   	   left: 20px;
+		  	   width: 240px;
+		  	   height: 100px;
+		  	   animation:haha 5s ease;
+		  }
+		   .box img{
+		   	  width: 100%;
+		   	  height: 100px;
+		   }
+		   @keyframes haha{
+		   	    from {
+            bottom: 100px;
+            left: 20px;
+            transform: skew(20deg, 0);
+        }
+        to {
+            bottom: 100px;
+            left: 800px;
+            transform: skew(-20deg, 0);
+		   }
+	</style>
+</head>
+<body>
+	 <div class="box">
+	 	  <img src="images/car.jpg" alt="">
+	 </div>
+</body>
+</html>

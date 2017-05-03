@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul li:first-child{
+			background: red;
+		}
+		body :first-child{
+			background: red;
+		}
+		body h1:first-child{
+			background: red;
+		}
+		/*该元素是父级下的第一个*/
+		body p:first-child{
+			background: red;
+		}
+		p:first-child i{
+	        background: red;
+	    }
+/*	    .box{
+	    	border-left: 1px solid blue;
+	    }*/
+	</style>
+</head>
+<body>
+	<!-- <div class="box">aaaaa</div>	 -->
+	<p>some <i>text1</i>. some <i>text2</i>.</p>
+    <p>some <i>text3</i>. some <i>text4</i>.</p>
+	<div class="box">
+		<p>p</p>
+		<h1>h1</h1>
+		<h1>h1</h1>
+		<p>p</p>
+	</div>
+</body>
+</html>

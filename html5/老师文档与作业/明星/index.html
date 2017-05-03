@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>明星资料卡</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--导入jsp文件-->
+		<script type="text/javascript" src="js/main.js" ></script>
+	</head>
+	<body>
+		<div id="box">
+			<!--用作文档中插图的图像-->
+			<figure class="view1">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				<!--和<figure>配套使用 用于显示插图标题-->
+				<figcaption>
+					<h2>Billboard三首排行第一</h2>
+					<p class="pp p1">Shake It Off</p>
+					<p class="pp p2">Black Space</p>
+					<p class="pp p3">Bad Blood</p>
+				</figcaption>
+			</figure>
+			<figure class="view2">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				
+				<figcaption>
+					<h2>Taylor Swift</h2>
+					<p class="info1">Brrthday:1991.10.5</p>
+					<p class="info2">Height:180cm</p>
+					<p class="info3">Weight:55kg</p>
+				</figcaption>
+			</figure>
+			<figure class="view3">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				
+				<figcaption>
+					<h2>Back To December</h2>
+					<p>
+					   I'm so glad you made time to see me.
+					   How's life, tell me how's your family
+					   I haven't seen them in a while.
+					   You've been good, busier then ever.
+					   We small talk, work and the weather
+					   Your guard is up and I know why...
+					</p>
+				</figcaption>
+			</figure>
+			<figure class="view4">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				
+			<!--	<div></div>-->
+				<figcaption>
+					<h2>1989</h2>
+					<p>Taylor Swift《1989》</p>
+				</figcaption>
+				<div></div>
+			</figure>
+			<figure class="view5">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				
+				<figcaption>
+					<h2>Taylor Swift - 《22》</h2>
+					<p>
+					   I don't know about you 
+					   but im feeling 22
+                       Everything will be alright 
+                       if you keep me next to you
+                       You don't know about me 
+                       but I bet you want to
+                       Everything will be alright 
+                       if we just keep dancing like we're 22, 22
+                       seems like one of those nights
+					</p>
+					<div></div>
+				</figcaption>
+			</figure>
+			<figure class="view6">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				<figcaption>
+					<h2>Out of the woods</h2>
+				</figcaption>
+			</figure>
+			<figure class="view7">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+			</figure>
+			<figure class="view8">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+				
+				<figcaption>
+					<h2>Taylor Swift</h2>
+				</figcaption>
+				<div class="width"></div>
+				<div class="height"></div>
+			</figure>
+			<figure class="view9">
+				<img src="1989Polaroid/2.png" alt="此图片无法下载"/>
+			</figure>
+		</div>
+		
+		<!--添加音乐图标-->
+		<!--鼠标点击事件  引号里面要写点击的方法-->
+		<img src="1989Polaroid/musicBtn.png" class="muiscbtn" onclick="playPause(this)" />
+		<!--添加音乐<audio> 自动播放<autoplay>-->
+		<audio src="mp3/Taylor Swift - We Are Never Ever Getting Back Together.mp3" autoplay="autoplay" id="musicPlayer"></audio>
+	</body>
+</html>

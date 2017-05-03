@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	* { padding: 0; margin: 0; }
+	body { font-size: 12px; }
+	ul li { list-style: none; }
+	a { text-decoration: none; }
+	#nav { width: 900px; height: 100px; margin: 20px auto; position: relative; }
+	a:link, a:visited { color: #000; }
+	#nav ul { position: absolute; bottom: 0; left: 0; }			 
+	#nav ul li { float: left; margin-right: 1px; }
+	#nav ul li a { display: block; background: url(images/left.gif) no-repeat left top; }
+	#nav ul li a span { display: block; background: url(images/right.gif) no-repeat right top; padding: 5px 10px; }
+	#nav ul li a:hover { color: #fff; }
+	#nav ul #index a { background-position: left -27px; }
+	#nav ul #index a span { background-position: right -27px; }
+	#nav ul #number a:hover { background-position: left -57px; }
+	#nav ul #number a:hover span { background-position: right -57px; } 
+	#nav ul #fangchan a:hover { background-position: left -87px; }
+	#nav ul #fangchan a:hover span{ background-position: right -87px; }
+	#nav ul #car a:hover { background-position: left -117px; }
+	#nav ul #car a:hover span{ background-position: right -117px; }
+	#nav ul #sport a:hover { background-position: left -147px; }
+	#nav ul #sport a:hover span { background-position: right -147px; }
+	#nav ul #game a:hover { background-position: left -177px; }
+	#nav ul #game a:hover span { background-position: right -177px; }
+	#nav ul #new { position: relative; bottom: 15px; right: 10px; }
+	</style>
+</head>
+<body>
+<div id="nav">
+    <ul>
+		<li id="index"><a href="#"><span>首页</span></a></li>
+		<li id="number"><a href="#"><span>数码通讯</span></a></li>
+		<li id="fangchan"><a href="#"><span>房产</span></a></li>
+		<li id="car"><a href="#"><span>汽车</span></a></li>
+		<li id="sport"><a href="#"><span>运动</span></a></li>
+		<li id="game"><a href="#"><span>游戏</span></a></li>
+		<li id=""><a href="#"><span>书籍游戏</span></a></li>
+		<li id=""><a href="#"><span>家居</span></a></li>
+		<li id=""><a href="#"><span>香港街</span></a></li>
+		<li id=""><a href="#"><span>淘宝商城</span></a></li>
+		<li id="new"><img src="images/new.gif" /></li>
+	</ul>
+</div>
+</body>
+</html>

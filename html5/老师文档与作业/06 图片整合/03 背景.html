@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 220px;
+			height: 220px;
+			border: 10px solid #000;
+			display: inline-block;
+			background: url(../img/222.jpg);
+		}
+		.box2{
+			background-position:-220px 0;
+		}
+		.box3{
+			background-position:0px -220px;
+		}
+		.box4{
+			background-position:-220px -220px;
+		}
+		.box3:hover,.box4:hover,.box2:hover{
+			background-position: 0 0;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+</body>
+</html>

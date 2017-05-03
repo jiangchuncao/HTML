@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{margin: 0;padding: 0;background: #ccc;}
+		.content{width: 1000px;margin:auto;}
+		.box{
+			width: 202px;height: 202px;
+			border: 1px solid #ccc;
+			background: #fff;
+			margin: 20px;
+			display: inline-block;
+		}
+		.box1{
+			width: 180px;height: 180px;
+			border: 1px solid red;
+			margin: 10px;
+			border-radius: 50%;
+		}
+		.box2{
+			width: 180px;height: 180px;
+			border: 1px solid red;
+			margin: 10px;
+			border-radius: 50% 50% 0 0;
+		}
+		.box3{
+			width: 180px;height: 90px;
+			border: 1px solid red;
+			margin:45px auto;
+			border-radius: 90px 90px 0 0;
+		}
+		.box4{
+			width: 180px;
+			height: 180px;
+			border: 1px solid red;
+			margin: 10px;
+			border-radius: 90px 0 0 0;
+		}
+		.box5{
+			width: 90px;height: 90px;
+			border: 1px solid red;
+			border-radius: 90px 0 0 0;
+			margin: auto;
+		}
+		.box6{
+			width: 40px;height: 40px;
+			border: 70px solid red;
+			border-radius: 90px;
+			margin: 10px;
+		}
+		.box7{
+			width: 40px;height: 40px;
+			border: 70px solid red;
+			border-radius: 60px;
+			margin: 10px;
+		}
+		.box8{
+			width: 0;height: 0;
+			border-width: 90px;
+			border-style: solid;
+			border-color: red green yellow blue;
+			margin: 10px;
+		}
+		.box9{
+			width: 0;height: 0;
+			border:90px solid red;
+			border-radius: 90px;
+			border-right-color: transparent;
+			margin: 10px;
+		}
+		.box10{
+			width: 0;
+			height: 0;
+			border:90px solid transparent;
+			border-radius: 90px;
+			border-right-color: red;
+			margin: 10px;
+		}
+		.box11{
+			width: 180px;
+			height: 0;
+			margin: 10px;
+			border-top:90px solid red;
+			border-bottom:90px solid green;
+			border-radius: 90px;
+		}
+		.box12{
+			width: 180px;
+			height: 90px;
+			border-bottom:90px solid green;
+			border-radius: 90px;
+			background: red;
+			position: relative;
+			margin: 10px;
+		}
+		.box12::after,
+		.box12::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 20px;
+			height: 20px;
+			border-width: 35px;
+			border-style: solid;
+			border-radius: 45px;
+		}
+		.box12::after {
+			background-color: red;
+			border-color: green;
+		}
+		.box12::before {
+			background-color: green;
+			border-color: red;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box">
+			<div class="box1"></div>
+		</div>
+		<div class="box">
+			<div class="box2"></div>
+		</div>
+		<div class="box">
+			<div class="box3"></div>
+		</div>
+		<div class="box">
+			<div class="box4"></div>
+		</div>
+		<div class="box">
+			<div class="box5"></div>
+		</div>
+		<div class="box">
+			<div class="box6"></div>
+		</div>
+		<div class="box">
+			<div class="box7"></div>
+		</div>
+		<div class="box">
+			<div class="box8"></div>
+		</div>
+		<div class="box">
+			<div class="box9"></div>
+		</div>
+		<div class="box">
+			<div class="box10"></div>
+		</div>
+		<div class="box">
+			<div class="box11"></div>
+		</div>
+		<div class="box">
+			<div class="box12"></div>
+		</div>
+	</div>
+</body>
+</html>

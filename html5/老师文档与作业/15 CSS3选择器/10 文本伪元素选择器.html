@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*行内元素也可以*/
+		/*span::selection{
+			background: red;
+			color: yellow;
+			font-size: 40px;
+		}*/
+		/*span:first-line{
+			background: red;	
+		}
+		span:first-letter{
+			background: red;	
+		}*/
+		/*not(selector) */
+		/*li:not(.box){
+			background: red;
+		}*/
+		/*后面所以得兄弟*/
+		.box~li{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1111</li>
+		<li class="box">box</li>
+		<li>1111</li>
+		<li>2222</li>
+		<li>3333</li>
+	</ul>
+	<span>
+		abc示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时表示E元素在用户选中文字时
+	</span>
+</body>
+</html>

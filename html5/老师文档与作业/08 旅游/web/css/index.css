@@ -1,0 +1,220 @@
+
+/*banner*/
+.banner{
+	height: 300px;
+	background: url(../img/adver.jpg) center;
+}
+.banner{
+	color: #eee;
+}
+.banner .adv{
+	padding:100px 0 0 50px;
+}
+.banner h2{
+	font-size: 35px;
+}
+.banner h3{
+	font-size: 22px;
+}
+/*main*/
+.main{
+	margin-top: 30px;
+}
+/*主体内容 左侧*/
+.main .m_left{
+	float: left;
+	width: 910px;
+}
+.main .ml_header{
+	height: 45px;
+	line-height: 45px;
+	background: #eee;
+	border-left: 1px solid #eee;
+}
+.ml_header li{
+	float: left;
+	cursor: pointer;
+}
+.main .tab{
+	float: left;
+}
+.main .tab li{
+	width: 150px;
+	text-align: center;
+}
+.main .tab .active{
+	background: #fff;
+	border-top: 2px solid #458b00;
+}
+
+.main .condition{
+	float: right;
+}
+.main .condition li{
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin: 10px 15px;
+    padding: 0 8px;
+}
+.main .condition li:hover,
+.main .condition .active
+{
+	background: #458b00;
+    color: #fff;
+}
+
+.main .list li{
+	height: 230px;
+	border: 1px solid #eee;
+	margin-top: 25px;
+	position: relative;
+}
+.main .list .img{
+	float: left;
+	width: 380px;
+	height: 230px;
+}
+.main .list .message{
+	float: left;
+	width: 265px;
+	margin-left: 25px;
+}
+.main .list h2{
+	color: #333;
+	font-size: 24px;
+	font-weight: normal;
+	margin:16px 0 20px 0;
+}
+.main .list .text{
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+.main .list .mark{
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 34px;
+}
+.main .list .mark span{
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	width: 44px;
+	height: 19px;
+	text-align: center;
+	line-height: 19px;
+	display: inline-block;
+}
+
+.main .list .price{
+	float: right;
+	margin:60px 30px 0 0;
+	color: #ff6600;
+	text-align: center;
+}
+.main .price p strong{
+	font-size: 27px;
+}
+.main .price p span{
+	font-size: 12px;
+	color: #999;
+	text-decoration: line-through;
+}
+.main .price .btn{
+	width: 152px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background: #ff6600;
+	color: #fff;
+	border-radius: 3px;
+}
+.main .list .tips{
+	width: 90px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	background: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+.main .list .disc{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 52px;
+	height: 52px;
+	font-size: 14px;
+	background: url(../img/disc.png);
+}
+.main .list .disc span{
+	display: block;
+	transform: rotate(45deg);
+	margin-left: 18px;
+    margin-top: 8px;
+    color: #ff7d5a;
+}
+.main .list .bottom{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	background: #fafafa;
+	height: 30px;
+	line-height: 30px;
+	width: 528px;
+    text-indent: 25px;
+}
+.main .list .bottom time{
+	color: #458b00;
+}
+.main .m_left .more{
+	width: 202px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin:24px auto 20px auto;
+	background: #fafafa;
+}
+
+/*主体内容 右侧*/
+.main .m_right{
+	float: right;
+	width: 340px;
+}
+.main .m_right >div{
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+
+}
+.main .m_right h2{
+	font-size: 20px;
+	background: #fafafa;
+	text-indent: 10px;
+	line-height: 40px;
+	font-weight: normal;
+}
+.main .recommend ul{
+	padding: 10px 13px;
+} 
+.main .recommend li{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background: #eee;
+	color: #999;
+	float: left;
+	margin: 2px;
+	text-indent: 8px;
+}
+.main .hot ul{
+	padding: 8px 7px;
+}
+.main .hot li{
+	width: 150px;
+	float: left;
+	margin:6px;
+	text-align: center;
+}

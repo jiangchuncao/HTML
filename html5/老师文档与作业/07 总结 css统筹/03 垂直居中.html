@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直居中</title>
+	<style>
+		.box,.box1,.box2,.box3,.box4{
+			margin-bottom: 20px;
+		}
+		.box{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+			/*单行文本居中 给与高度相同的行高*/
+			line-height: 400px;
+		}
+		.box1{
+			width: 400px;
+			background: #ccc;
+			/*高度未知  子元素居中*/
+			padding: 50px;
+		}
+		.box2{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+			display: table;
+		}
+		.box2 .son{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.box3{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+			position: relative;
+		}
+		.box3 .son{
+			width: 100px;
+			height: 100px;
+			background:yellow;
+			position: absolute;
+			top:50%;
+			margin-top: -50px;
+			left: 50%;
+			margin-left: -50px;
+		}
+
+		.box4{
+			width: 400px;
+			height: 400px;
+			background: #ccc;
+			position: relative;
+		}
+		.box4 .son{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			position: absolute;
+			margin:auto;
+			top:0;
+			bottom:0;
+			left: 0;
+			right: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		我是一个我是一个我是一个我是一个我是一个
+	</div>
+	
+	<div class="box1">
+		一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖一颗糖
+	</div>	
+
+	<div class="box2">
+		<div class="son">文字文字文字文字</div>
+	</div>
+	
+	<div class="box3">
+		<div class="son"></div>
+	</div>	
+
+	<div class="box4">
+		<div class="son"></div>
+	</div>
+	
+</body>
+</html>

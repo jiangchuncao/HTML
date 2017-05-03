@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;color:blue;}
+img{border:none;}
+table{border-collapse: collapse;}
+textarea{resize: none;overflow: hidden;}
+
+/*public*/
+body{font-family: '微软雅黑';color: #666;}
+.wrap{
+	width: 1263px;
+	margin:0 auto;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*header*/
+.header{
+	background: #333333;
+	height: 70px;
+}
+.header h1{
+	float: left;
+	height: 70px;
+}
+.header ul{
+	float: right;
+}
+.header ul li{
+	line-height: 70px;
+	float: left;
+}
+/*banner*/
+.banner{
+	height: 300px;
+	background: url(../img/adver.jpg) center;
+}
+.banner h1{
+	margin-left: 100px;
+}
+/*main*/
+.main .m_left{
+	float: left;
+	width: 910px;
+	background: pink;
+}
+.main .m_right{
+	float: right;
+	width: 340px;
+	background: yellow;
+}
+/*footer*/
+.footer{
+	background: #222222;
+}
+.footer ul{
+	float: left;
+}
